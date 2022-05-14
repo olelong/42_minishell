@@ -29,9 +29,9 @@ it encounters a line containing the delimiter. However, the history
 does not have to be updated!  
 ◦ ``` >> ```must redirect the output to append mode  
 and the ``` | ``` pipes.  
-
-
-
+  
+![example](./example/example.mp4)
+  
 <p align="left"> ******************** FRENCH ********************** </p>
 
 Le but de ce programme est d'implémenter un shell aussi proche de bash que possible.  
