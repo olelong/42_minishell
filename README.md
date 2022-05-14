@@ -30,6 +30,8 @@ does not have to be updated!
 ◦ ``` >> ```must redirect the output to append mode  
 and the ``` | ``` pipes.  
   
+#### Some examples of commands :
+![example](./example/example.png)
    
 <p align="left"> ******************** FRENCH ********************** </p>
 
