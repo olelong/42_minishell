@@ -30,3 +30,32 @@ does not have to be updated!
 ◦ ``` >> ```must redirect the output to append mode  
 and the ``` | ``` pipes.  
 
+<p align="left"> ******************** FRENCH ********************** </p>
+
+Le but de ce programme est d'implémenter un shell aussi proche de bash que possible.  
+Mais aussi d'utiliser les signaux interactifs et non-interactifs  
+tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.  
+
+### Comment ça marche :  
+#### Pour lancer le programme, vous pouvez :
+Taper la commande ``` make ```  
+Lancer l'exécutable ``` ./minishell ```  
+
+Vous pouvez ensuite exécuter des commandes shell telles que :  
+◦ ``` echo ``` et l'option -n.  
+◦ ``` cd ``` uniquement avec un chemin relatif ou absolu  
+◦ ``` pwd ``` sans aucune option  
+◦ ``` export ``` sans aucune option  
+◦ ``` unset ``` sans aucune option  
+◦ ``` env ``` sans option ni argument  
+◦ ``` exit ``` sans aucune option  
+◦ ``` echo $? ```  
+  
+Vous pouvez jouer avec les redirections :  
+◦ ``` < ``` doit rediriger l'entrée.  
+◦ ``` > ``` doit rediriger la sortie.  
+◦ ``` << ``` doit recevoir un délimiteur et lire l'entrée donnée jusqu'à ce que  
+qu'il rencontre une ligne contenant le délimiteur. Cependant, l'historique  
+ne doit pas être mis à jour !  
+◦ ``` >> ``` doit rediriger la sortie vers le mode append.  
+et les ``` | ``` pipe.  
