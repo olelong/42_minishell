@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 13:01:37 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/25 01:23:53 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 01:55:24 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ t_cmd	*expand_cmd(t_cmd *cmd, t_vars *vars)
 	while (ptr)
 	{
 		ptr = expand_wrd(vars, &cmd->cmd, ptr);
-		print_wrd_list(cmd->cmd);
-		printf("next_step\n");
 		ptr = ptr->next;
 	}
 	ptr = cmd->cmd;
@@ -45,10 +43,7 @@ t_cmd	*expand_cmd(t_cmd *cmd, t_vars *vars)
 			ptr = parse_var(vars, ptr);
 		ptr = ptr->next;
 	}
-	print_wrd_list(cmd->cmd);
 	cleanup_cmd(&cmd->cmd);
-	printf("sep\n");
-	print_wrd_list(cmd->cmd);
 	return (cmd);
 }
 /* 

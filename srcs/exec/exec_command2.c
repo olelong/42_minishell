@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/22 15:42:42 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/24 14:25:37 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 01:58:26 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int	exec_with_fork(char *path, char **argv, char **env, t_vars *vars)
 /*essaye d'exec le programme, en cas d'erreur quitte*/
 void	exec_without_fork(char *path, char **argv, char **env, t_vars *vars)
 {
+	init_child_signal();
 	execve(path, argv, env);
 	destroy_tab((void **)argv);
 	destroy_tab((void **)env);

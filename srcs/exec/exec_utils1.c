@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 15:29:37 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/24 15:56:50 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 02:19:12 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,36 @@
 #include "../error_quit/errors.h"
 #include "../utils/utils.h"
 
+void	check_sigint(t_cmd *cmd)
+{
+	bool	noprint;
+	bool	newline;
+
+	newline = false;
+	noprint = false;
+	while (cmd)
+	{
+		if (cmd->exec.pid == 128 + SIGSEGV || cmd->exec.pid == 128 + SIGQUIT)
+			noprint = true;
+		if (cmd->exec.pid == 128 + SIGINT && !noprint)
+			newline = true;
+		if (cmd->exec.pid == 128 + SIGINT && !cmd->next)
+			newline = false;
+		cmd = cmd->next;
+	}
+	if (newline)
+		write(1, "\n", 1);
+}
+
 /* passe dans tout les maillons cmd et 
 * wait les process qui ont été crées pendant le piping
 * ecris un message si le process a exit avec un des signaux demandant un message
 */
 void	wait_all(int *ret, t_cmd *cmd)
 {
+	t_cmd	*ptr;
+
+	ptr = cmd;
 	while (cmd)
 	{
 		if (cmd->type == CMD)
@@ -28,9 +52,11 @@ void	wait_all(int *ret, t_cmd *cmd)
 				wait_child(cmd->exec.pid, ret, 0);
 			else
 				wait_child(cmd->exec.pid, ret, 1);
+			cmd->exec.pid = *ret;
 		}
 		cmd = cmd->next;
 	}
+	check_sigint(ptr);
 }
 
 /* wait un process puis assigne a ret la bonne valeur de retour*/

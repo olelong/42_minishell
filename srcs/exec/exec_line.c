@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/17 16:56:58 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/25 01:08:56 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 02:54:07 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,10 @@ void	exec_line(t_vars *vars)
 	init_non_interactive_signal();
 	if (!check_heredoc(vars))
 	{
+		if (g_last_status > 0)
+			g_last_status = 0;
+		else
+			g_last_status = -g_last_status;
 		destroy_heredocs(vars);
 		lst_destroy_cmd(vars->command_line);
 		vars->command_line = NULL;
@@ -34,7 +38,6 @@ void	exec_line(t_vars *vars)
 	ret = exec_tree(vars, get_tree_head(vars->command_line), STDIN_FILENO);
 	if (vars->command_line->exec.in_pipe == true)
 		wait_all(&ret, vars->command_line);
-	ret = ret & 255;
 	destroy_heredocs(vars);
 	lst_destroy_cmd(vars->command_line);
 	vars->command_line = NULL;

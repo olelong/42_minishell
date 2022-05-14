@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 14:16:45 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/25 01:16:29 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 02:31:08 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,10 +87,7 @@ int	read_heredoc(t_vars *vars, int fd, char *limiter)
 	while (line)
 	{
 		if (g_last_status < 0)
-		{
-			g_last_status = -g_last_status;
 			return (close_free(fd, limiter, line));
-		}
 		if (ft_strncmp(line, limiter, ft_strlen(limiter) + 1) == 0)
 		{
 			close_free(fd, limiter, line);

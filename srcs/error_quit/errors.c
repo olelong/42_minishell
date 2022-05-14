@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 16:05:01 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/24 22:04:23 by olelong          ###   ########.fr       */
+/*   Updated: 2022/01/25 03:00:41 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	write_signal(int signum)
 {
-	if (signum == SIGSEGV)
+	if (signum == 128 + SIGSEGV)
 		ft_putstr_fd("Segmentation Fault (core dumped)", STDERR_FILENO);
-	else if (signum == SIGQUIT)
+	else if (signum == 128 + SIGQUIT)
 		ft_putstr_fd("Quit (core dumped)", STDERR_FILENO);
 	ft_putchar_fd('\n', STDERR_FILENO);
 }

@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 22:59:53 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/24 22:05:20 by olelong          ###   ########.fr       */
+/*   Updated: 2022/01/25 02:56:51 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ void	quit(bool print_errno, const char *error, t_vars *vars)
 		write_err(false, error, NULL);
 	if (vars != NULL)
 	{
+		if (g_last_status < 0)
+			g_last_status = -g_last_status;
 		ret = g_last_status;
 		free_all(vars);
 	}

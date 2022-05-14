@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 15:34:53 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/25 01:30:26 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 02:48:07 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ static inline t_wrd	*variable_expansion(t_vars *vars, t_wrd **head, t_wrd *wrd)
 {
 	const char	*temp;
 
+	(void)head;
 	if (ft_strncmp(wrd->next->data, "?", ft_strlen(wrd->next->data)) == 0)
 	{
 		if (g_last_status < 0)
@@ -65,10 +66,7 @@ static inline t_wrd	*variable_expansion(t_vars *vars, t_wrd **head, t_wrd *wrd)
 		if (temp)
 			wrd->data = ft_strdup(temp);
 		else
-		{
-			wrd = wrd->prec;
-			lst_remove_one_wrd(head, wrd->next);
-		}
+			wrd->type = UNKNOWN;
 		if (temp && !wrd->data)
 			quit(1, ERR_EXPAND, vars);
 	}

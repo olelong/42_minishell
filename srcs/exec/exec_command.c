@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 17:39:28 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/25 01:15:27 by afaure           ###   ########.fr       */
+/*   Updated: 2022/01/25 03:04:11 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static inline int	error_return(int error, t_cmd *cmd, t_vars *vars)
 	if (error == ISDIR)
 	{
 		write_err(ERR_MINISHELL, cmd->cmd->data, ERR_ISDIR);
-		return (127);
+		return (126);
 	}
 	if (error == NOFILE)
 	{

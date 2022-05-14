@@ -6,7 +6,7 @@
 /*   By: afaure <afaure@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:27:04 by afaure            #+#    #+#             */
-/*   Updated: 2022/01/21 23:27:06 by olelong          ###   ########.fr       */
+/*   Updated: 2022/01/25 02:48:24 by afaure           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 bool	valid_token(t_wrd *wrd)
 {
 	if (wrd->type == WRD || wrd->type == DOLLAR
-		|| wrd->type == QUOTE_IN || wrd->type == QUOTE_OUT)
+		|| wrd->type == QUOTE_IN || wrd->type == QUOTE_OUT
+		|| wrd->type == UNKNOWN)
 		return (true);
 	return (false);
 }
