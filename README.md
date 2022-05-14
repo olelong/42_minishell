@@ -1,6 +1,10 @@
 # 42_minishell
 Developing a shell
 
+The goal of this program is to implement a shell as close to bash as possible.  
+But also to use the interactive and non-interactive signals  
+such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
+
 ### How does it works :
 
 #### To launch the program you can :
