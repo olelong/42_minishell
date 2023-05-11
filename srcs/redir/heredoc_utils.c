@@ -61,9 +61,7 @@ t_wrd	*expand_heredoc(t_vars *vars, t_wrd *parsed_line)
 t_wrd	*expand_limiter(t_vars *vars, t_wrd **head, t_wrd *wrd)
 {
 	t_wrd	*start;
-	bool	in_quote;
 
-	in_quote = false;
 	start = wrd;
 	while (wrd != NULL && valid_token(wrd) == true)
 	{
