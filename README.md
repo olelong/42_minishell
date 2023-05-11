@@ -11,7 +11,7 @@ such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
 
 ### How does it works :
 Clone the repository ``` git clone git@github.com:olelong/42_minishell.git ```  
-Enter in the repository ``` cd minishell ``` or the name you gave when you cloned the repository  
+Enter in the repository ``` cd 42_minishell ``` or the name you gave when you cloned the repository  
   
 #### To launch the program you can :
 Type the command ``` make ```
