@@ -9,11 +9,11 @@ The goal of this program is to implement a shell as close to bash as possible.
 But also to use the interactive and non-interactive signals  
 such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
 
-### How does it works :
+## How does it works :
 Clone the repository ``` git clone git@github.com:olelong/42_minishell.git ```  
 Enter in the repository ``` cd 42_minishell ``` or the name you gave when you cloned the repository  
   
-#### To launch the program you can :
+### To launch the program you can :
 Type the command ``` make ```
 Launch the executable ``` ./minishell ```
 
@@ -36,7 +36,7 @@ does not have to be updated!
 ◦ ``` >> ```must redirect the output to append mode  
 and the ``` | ``` pipes.  
   
-#### Some examples of commands :
+### Some examples of commands :
 ![example](./example/example.png)
    
 <p align="left"> *************************** FRANCAIS *************************** </p>
@@ -45,11 +45,11 @@ Le but de ce programme est d'implémenter un shell aussi proche de bash que poss
 Mais aussi d'utiliser les signaux interactifs et non-interactifs  
 tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.  
 
-### Comment ça marche :  
+## Comment ça marche :  
 Clonez le repository ``` git clone git@github.com:olelong/42_minishell.git ```  
 Entrez dans le dossier ``` cd minishell ``` ou le nom que vous avez donné lorsque vous avez cloné le repo
   
-#### Pour lancer le programme, vous pouvez :
+### Pour lancer le programme, vous pouvez :
 Taper la commande ``` make ```  
 Lancer l'exécutable ``` ./minishell ```  
 
@@ -72,5 +72,5 @@ ne doit pas être mis à jour !
 ◦ ``` >> ``` doit rediriger la sortie vers le mode append.  
 et les ``` | ``` pipe.  
 
-#### Some examples of commands :
+### Some examples of commands :
 ![example](./example/example.png)
