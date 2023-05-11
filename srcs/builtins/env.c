@@ -16,9 +16,6 @@
 
 int	env(char **argv, t_vars *vars)
 {
-	size_t			i;
-
-	i = 0;
 	if (argv[1])
 	{
 		write_err(ERR_ENV, NULL, ERR_TOO_MANY);
