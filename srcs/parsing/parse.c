@@ -44,10 +44,8 @@ static int	manage_one_operator(char *str, int loop_i, int *quote_i, t_vars *v)
 {
 	int		i;
 	int		is_double_op;
-	int		ret;
 
 	is_double_op = 0;
-	ret = 0;
 	if (!is_operator(str[0]) || is_operator_a_word(str[0], *quote_i))
 		is_double_op = -1;
 	else if (str[0] == '<' || str[0] == '>')
