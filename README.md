@@ -5,6 +5,7 @@ Project in pair with @afaure.
 
 <p align="left"> *************************** ENGLISH *************************** </p>
 
+## The Project :
 The goal of this program is to implement a shell as close to bash as possible.  
 But also to use the interactive and non-interactive signals  
 such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
@@ -41,6 +42,7 @@ and the ``` | ``` pipes.
    
 <p align="left"> *************************** FRANCAIS *************************** </p>
 
+## Le Projet :
 Le but de ce programme est d'implémenter un shell aussi proche de bash que possible.  
 Mais aussi d'utiliser les signaux interactifs et non-interactifs  
 tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.  
