@@ -3,7 +3,7 @@ Developing a shell
 
 Project in pair with @afaure.
 
-<p align="left"> **************************************************** ENGLISH ******************************************************* </p>
+<p align="left"> *************************** ENGLISH *************************** </p>
 
 The goal of this program is to implement a shell as close to bash as possible.  
 But also to use the interactive and non-interactive signals  
@@ -39,7 +39,7 @@ and the ``` | ``` pipes.
 #### Some examples of commands :
 ![example](./example/example.png)
    
-<p align="left"> **************************************************** FRANÇAIS ******************************************************* </p>
+<p align="left"> *************************** FRANCAIS *************************** </p>
 
 Le but de ce programme est d'implémenter un shell aussi proche de bash que possible.  
 Mais aussi d'utiliser les signaux interactifs et non-interactifs  
