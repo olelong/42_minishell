@@ -71,3 +71,6 @@ qu'il rencontre une ligne contenant le délimiteur. Cependant, l'historique
 ne doit pas être mis à jour !  
 ◦ ``` >> ``` doit rediriger la sortie vers le mode append.  
 et les ``` | ``` pipe.  
+
+#### Some examples of commands :
+![example](./example/example.png)
