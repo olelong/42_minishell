@@ -10,6 +10,11 @@ The goal of this program is to implement a shell as close to bash as possible.
 But also to use the interactive and non-interactive signals  
 such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
 
+## Prerequisites
+* A Unix-based operating system (for example: Linux, macOS)
+* GCC compiler
+* GNU Make
+
 ## How does it works :
 Clone the repository ``` git clone git@github.com:olelong/42_minishell.git ```  
 Enter in the repository ``` cd 42_minishell ``` or the name you gave when you cloned the repository  
@@ -39,6 +44,10 @@ and the ``` | ``` pipes.
   
 ### Some examples of commands :
 ![example](./example/example.png)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
    
 <p align="left"> *************************** FRANCAIS *************************** </p>
 
@@ -46,6 +55,11 @@ and the ``` | ``` pipes.
 Le but de ce programme est d'implémenter un shell aussi proche de bash que possible.  
 Mais aussi d'utiliser les signaux interactifs et non-interactifs  
 tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.  
+
+## Prérequis
+* Un système d'exploitation basé sur Unix (par exemple: Linux, macOS)
+* Un compilateur GCC
+* Un GNU Make
 
 ## Comment ça marche :  
 Clonez le repository ``` git clone git@github.com:olelong/42_minishell.git ```  
@@ -76,3 +90,7 @@ et les ``` | ``` pipe.
 
 ### Some examples of commands :
 ![example](./example/example.png)
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
