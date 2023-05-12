@@ -1,11 +1,11 @@
 # 42_minishell
 Developing a shell
 
-Project in pair with @afaure.
+Project in pair with [Auguste Faure](https://github.com/afaure42).
 
 <p align="left"> *************************** ENGLISH *************************** </p>
 
-## The Project :
+## The Project:
 The goal of this program is to implement a shell as close to bash as possible.  
 But also to use the interactive and non-interactive signals  
 such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
@@ -15,11 +15,11 @@ such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
 * GCC compiler
 * GNU Make
 
-## How does it works :
+## How does it works:
 Clone the repository ``` git clone git@github.com:olelong/42_minishell.git ```  
 Enter in the repository ``` cd 42_minishell ``` or the name you gave when you cloned the repository  
   
-### To launch the program you can :
+### To launch the program you can:
 Type the command ``` make ```
 Launch the executable ``` ./minishell ```
 
@@ -51,7 +51,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
    
 <p align="left"> *************************** FRANCAIS *************************** </p>
 
-## Le Projet :
+## Le Projet
 Le but de ce programme est d'implémenter un shell aussi proche de bash que possible.  
 Mais aussi d'utiliser les signaux interactifs et non-interactifs  
 tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.  
@@ -61,7 +61,7 @@ tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.
 * Un compilateur GCC
 * Un GNU Make
 
-## Comment ça marche :  
+## Comment ça marche  
 Clonez le repository ``` git clone git@github.com:olelong/42_minishell.git ```  
 Entrez dans le dossier ``` cd minishell ``` ou le nom que vous avez donné lorsque vous avez cloné le repo
   
