@@ -57,7 +57,7 @@ Mais aussi d'utiliser les signaux interactifs et non-interactifs
 tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.  
 
 ## Prérequis
-* Un système d'exploitation basé sur Unix (par exemple: Linux, macOS)
+* Un système d'exploitation basé sur Unix (Linux)
 * Un compilateur GCC
 * Un GNU Make
 
