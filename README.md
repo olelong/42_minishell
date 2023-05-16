@@ -11,7 +11,7 @@ But also to use the interactive and non-interactive signals
 such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
 
 ## Prerequisites
-* A Unix-based operating system (for example: Linux)
+* A Unix-based operating system (Linux)
 * GCC compiler
 * GNU Make
 
