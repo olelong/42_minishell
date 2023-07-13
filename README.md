@@ -15,15 +15,7 @@ such as ``` ctrl + c ``` , ``` ctrl + d ``` and ``` ctrl + \ ```.
 * GCC compiler
 * GNU Make
 
-## How does it works:
-Clone the repository ``` git clone git@github.com:olelong/42_minishell.git ```  
-Enter in the repository ``` cd 42_minishell ``` or the name you gave when you cloned the repository  
-  
-### To launch the program you can:
-Type the command ``` make ```
-Launch the executable ``` ./minishell ```
-
-Then you can run shell commands such as :  
+Implementation of shell commands such as :
 ◦ ```echo ``` and the -n option  
 ◦ ```cd ``` only with a relative or absolute path  
 ◦ ``` pwd ``` without any options  
@@ -44,10 +36,6 @@ and the ``` | ``` pipes.
   
 ### Some examples of commands :
 ![example](./example/example.png)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
    
 <p align="left"> *************************** FRANCAIS *************************** </p>
 
@@ -61,15 +49,7 @@ tels que ``` ctrl + c ``` , ``` ctrl + d ``` et ``` ctrl + \ ```.
 * Un compilateur GCC
 * Un GNU Make
 
-## Comment ça marche  
-Clonez le repository ``` git clone git@github.com:olelong/42_minishell.git ```  
-Entrez dans le dossier ``` cd minishell ``` ou le nom que vous avez donné lorsque vous avez cloné le repo
-  
-### Pour lancer le programme, vous pouvez :
-Taper la commande ``` make ```  
-Lancer l'exécutable ``` ./minishell ```  
-
-Vous pouvez ensuite exécuter des commandes shell telles que :  
+Implémentation des commandes shell :  
 ◦ ``` echo ``` et l'option -n.  
 ◦ ``` cd ``` uniquement avec un chemin relatif ou absolu  
 ◦ ``` pwd ``` sans aucune option  
@@ -90,7 +70,3 @@ et les ``` | ``` pipe.
 
 ### Some examples of commands :
 ![example](./example/example.png)
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
